@@ -1,0 +1,208 @@
+html {
+width: 100vw !important;
+height: 100vh !important;
+background-color: rgba(0,0,0,0) !important;
+overflow: scroll;
+overflow-x: hidden;
+overflow-y: hidden;
+font-family: 'Josefin Sans', sans-serif;
+}
+
+::-webkit-scrollbar {
+width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+box-shadow: inset 0 0 12px grey;
+border-radius: 10px 10px 0px 0px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: lightslategrey;
+border-radius: 10px;
+}
+
+body {
+background-color: rgba(0,0,0,0);
+}
+
+#Characters {
+width: 100vw !important;
+height: 100vh !important;
+}
+
+#Options {
+    top: 35vh !important;
+    right: 29vw !important;
+    left: 29vw !important;
+    width: 42vw !important;
+    height: 32vh !important;
+    border-radius: 15px 15px 15px 15px;
+    padding: 8px;
+    border-radius: 6px;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 0.75em;
+    color: rgba(255, 255, 255, 0.75);
+    border: hidden;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute !important;
+}
+
+    #Options h1 {
+    padding-top:2vh;
+    padding-left:3vw;
+    }
+
+    #Options h3 {
+    padding-left:3vw;
+    }
+
+    #Options p {
+    padding-left: 3.5vw;
+    }
+
+#Play {
+top: 10vh !important;
+right: 3vw !important;
+width: 5.35vw;
+height: 13vh;
+position: absolute !important;
+}
+
+#Kill {
+bottom: 10vh !important;
+right: 3vw !important;
+width: 5.35vw;
+height: 13vh;
+position: absolute !important;
+}
+
+#Row {
+height: 150px !important;
+white-space: nowrap;
+overflow-x: scroll;
+overflow-y: hidden;
+bottom: 0px !important;
+left: 12% !important;
+right: 12% !important;
+width: 76% !important;
+position: absolute;
+}
+
+.Show {
+visibility: visible;
+}
+
+.Hide {
+visibility: hidden;
+}
+
+.Selector {
+padding-top: 15px !important;
+padding-left: 0px !important;
+}
+
+.Character {
+padding-top: 15px !important;
+padding-left: 35px !important;
+}
+
+a {
+text-decoration: none !important;
+}
+
+a img {
+border: 0px !important;
+margin: 0 !important;
+max-width: 70px !important;
+max-height: 70px !important;
+border-color: rgba(0,0,0,0) !important;
+background-overflow: visible !important;
+border: 0px solid rgba(0,0,0,0.25) !important;
+border-radius: 50% !important;
+background-color: rgba(255,255,255,0.25) !important;
+}
+
+a img:hover {
+border: 0px !important;
+margin: 0 !important;
+max-width: 70px !important;
+max-height: 70px !important;
+border-color: rgba(0,0,0,0) !important;
+background-overflow: visible !important;
+border: 0px solid rgba(0,0,0,0.25) !important;
+border-radius: 50% !important;
+background-color: rgba(0,0,0,0.25) !important;
+}
+
+.tooltip {
+position: relative;
+display: inline-block;
+}
+
+.tooltip .tooltiptext {
+visibility: hidden;
+width: 100px;
+background-color: black;
+font-size: 12px;
+color: #fff;
+text-align: center;
+padding: 9px 0;
+border-radius: 6px;
+position: absolute;
+z-index: 30;
+top: 100px;
+left: 20px;
+}
+
+.tooltip:hover .tooltiptext {
+visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+content: " ";
+position: absolute;
+bottom: 100%;
+left: 50%;
+margin-left: -5px;
+border-width: 5px;
+border-style: solid;
+border-color: transparent transparent black transparent;
+}
+
+#CharacterMake {
+
+}
+
+
+.FeildSet {
+padding: 8px;
+border-radius: 6px;
+background-color: rgba(0,0,0,0.5);
+font-size: 0.75em;
+color: rgba(255, 255, 255, 0.75);
+position: absolute;
+border: hidden;
+width: 12vw;
+top: 15vh;
+}
+
+.FeildSet p {
+text-align: center;
+}
+
+.FeildSet input {
+text-align: center;
+margin-left: 12%;
+min-width: 15%;
+max-width: 75%;
+}
+
+.FeildSet a {
+text-align: center;
+margin-left: 19%;
+}

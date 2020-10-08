@@ -1,0 +1,75 @@
+﻿<html>
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width">
+    <!--Default JQuery in game-->
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <!--Adding some Useful Libs-->
+
+    <!--Shared Frame JS and CSS-->
+    <link href="core.css" rel="stylesheet" type="text/css" />
+    <script src="core.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@402&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <form id="CharacterMake" class="Hide">
+        <fieldset class="FeildSet">
+            <p>First Name</p>
+            <input id="FirstName"
+                   placeholder="Frank"
+                   title="Must use between 2 and 25 English characters."
+                   minlength="2"
+                   maxlength="25"
+                   pattern="^([a-Z]{1,25}+)$"
+                   required>
+            <p>Last Name</p>
+            <input id="LastName"
+                   placeholder="Partick"
+                   title="Must use between 1 and 25 English characters."
+                   minlength="1"
+                   maxlength="25"
+                   pattern="^([a-Z]+)$"
+                   required>
+            <p>Height</p>
+            <input id="Height"
+                   type="text"
+                   placeholder="168"
+                   maxlength="3"
+                   title="Must use between 1 and 25 English characters."
+                   required>
+            <p>Date of Birth</p>
+            <input id="DateOfBirth"
+                   placeholder="DD-MM-YYYY"
+                   title="Must use a '-' as a seperator"
+                   maxlength="10"
+                   required>
+            <br />
+            <p>You can leave the feilds blank and be assigned a random name, date of birth and height.</p>
+            <br />
+            <br />
+            <a id="CreateNewCharacter" class="Character tooltip" onclick="CharacterMake()"><img src="libraries/img/icons8-ok-500.png" /></a>
+            <br />
+            <br />
+            <br />
+            <br />
+        </fieldset>
+    </form>
+
+    <div id="CharacterList">
+        <div id="Options" class="Hide">
+            <h1>Character Information Panel</h1>
+            <br />
+            <h3>Name:</h3><p id="name"></p>
+            <h3>Created on:</h3><p id="created"></p>
+            <h3>Current status:</h3><p id="status"></p>
+            <a id="Play" class="Selector Character tooltip" onclick="CharacterJoin();NewCheck()"><img src="libraries/img/icons8-tick-box-500.png" /><span class="tooltiptext">Enter</span></a>
+            <a id="Kill" class="Selector Character tooltip Hide" onclick="CharacterDelete()"><img src="libraries/img/icons8-unavailable-500.png" /><span class="tooltiptext">Delete</span></a>
+        </div>
+        <div id="Row">
+            <a id="New" class="Character tooltip" onclick="CharacterSelected(this.id, 'New', 'New', 'New'); OpenOptions(true);"><img src="libraries/img/icons8-new-500.png" /><span class="tooltiptext">New</span></a>
+        </div>
+    </div>
+</body>
+</html>
